@@ -42,7 +42,7 @@ Install Minikube (For my macbook used follwoing plugin)
  * `kubectl logs fine-tune-app-deployment-<ramdom-string>`
 
 2. Copy the Random Token string for Url in the logs:
-http://127.0.0.1:8900/tree?token=<ramdom-token-string>
+http://127.0.0.1:8900/tree?token=`<ramdom-token-string>`
  
 3. Run command of the empty terminal
 
