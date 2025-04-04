@@ -7,6 +7,7 @@
 * For testing against latest vulnerabilities are present.
 `docker scout dockerfile ./Dockerfile`
 `docker scout image nirupamak/fine-tune:latest --severity high`
+* The basic container Health-check is configured in `fine-tune-app/templates/deployment.yaml` for the POD health checks.
 
 #### To deploy docker image locally.
 1. `cd docker`  
