@@ -1,9 +1,12 @@
 ## Folder structure
 
 ### 1. docker
-    * Sample `Dockerfile` addon modules required LLM programs. 
-    * Sample `train.py` sample tringing large language model program. Includeded in the docker image. 
-    * The image  with `latest` tag is uploaded on Dockerhub `https://hub.docker.com/r/nirupamak/fine-tune/tags`.
+* Sample `Dockerfile` addon modules required LLM programs. 
+* Sample `train.py` sample tringing large language model program. Includeded in the docker image. 
+* The image  with `latest` tag is uploaded on Dockerhub `https://hub.docker.com/r/nirupamak/fine-tune/tags`.
+* For testing against latest vulnerabilities are present.
+`docker scout dockerfile ./Dockerfile`
+`docker scout image nirupamak/fine-tune:latest --severity high`
 
 #### To deploy docker image locally.
 1. `cd docker`  
@@ -35,7 +38,6 @@ Install Minikube (For my macbook used follwoing plugin)
 1. Run the following command to get Jupyter Notebook Token:
 
  * `kubectl get pods`
-
  * `kubectl logs fine-tune-app-deployment-<ramdom-string>`
 
 2. Copy the Random Token string for Url in the logs:
