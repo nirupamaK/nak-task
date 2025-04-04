@@ -1,4 +1,4 @@
-data "opentelekomcloud_networking_secgroup_v2" "fine_tune_security_group" {
+resource "opentelekomcloud_networking_secgroup_v2" "fine_tune_security_group" {
   name = "app-security-grp"
 }
 
@@ -17,8 +17,8 @@ resource "opentelekomcloud_vpc_subnet_v1" "fine_tune_subnet" {
   dns_list    = ["100.125.4.25", "1.1.1.1"]
 }
 
-output "default_security_group_id" {
-  value = data.opentelekomcloud_networking_secgroup_v2.fine_tune_security_group.id
+output "fine_tune_security_group_id" {
+  value = opentelekomcloud_networking_secgroup_v2.fine_tune_security_group.id
 }
 
 output "fine_tune_vpc" {
