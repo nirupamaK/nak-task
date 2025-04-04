@@ -68,6 +68,6 @@ Open the above URL in the browser paste <ramdom-token-string> in token box acces
 4. `terraform apply`
 5. type `yes`
 
-### Notes: This soloution is un-tested, due to lack to access credentials to OTC, the `terraform plan` is unable to run. Unable to find to similar option `skip_credentials_validation` of AWS provider for OTC terrform provider. 
+##### Notes: This soloution is un-tested, due to lack to access credentials to OTC, the `terraform plan` is unable to run. Unable to find to similar option `skip_credentials_validation` of AWS provider for OTC terrform provider. 
 
 However tried to run create a sample `opentelekomcloud_cce_cluster_v3` cluster with single node with some of its related resources to deploy the cluster.
