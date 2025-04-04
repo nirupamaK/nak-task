@@ -1,0 +1,26 @@
+replicaCount: 1
+image:
+  repository: nirupamak/fine-tune
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  name: fine-tune-app-service
+  type: NodePort
+  port: 8900
+  nodePort: 30080
+
+resources:
+  limits:
+    memory: "12Gi"
+    cpu: "8"
+  requests:
+    memory: "8Gi"
+    cpu: "4"
+
+ingress:
+  enabled: true
+  hosts:
+    - host: "fine-tune-app.local"
+      paths:
+        - /
