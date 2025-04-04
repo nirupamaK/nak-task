@@ -14,9 +14,11 @@
 Install Minikube (For my macbook used follwoing plugin)
 1. curl -Lo minikube https://github.com/kubernetes/minikube/releases/download/v1.35.0/minikube-darwin-arm64 \
    && chmod +x minikube
-2. sudo mv minikube /usr/local/bin. 
-3. Install terraform on laptop (In my case I used Terraform v1.5.7)
-4. Using `docker` driver for `minikube`. If need to change driver please update `minikube start` command in `provider.tf` file.
+2. sudo mv minikube /usr/local/bin.
+3. Install `kubectl` utility
+4. Install `helm` utility.
+5. Install terraform on laptop (In my case I used Terraform v1.5.7)
+6. Using `docker` driver for `minikube`. If need to change driver please update `minikube start` command in `provider.tf` file.
 
 #### To deploy app on minikube
 1. `cd minikube-local-terraform`  
